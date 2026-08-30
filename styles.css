@@ -139,6 +139,37 @@ h1, h2, h3, h4, .btn-large {
     font-weight: 300;
 }
 
+/* Social Links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.03);
+    color: var(--text-muted);
+    font-size: 1.25rem;
+    text-decoration: none;
+    transition: var(--transition);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.social-btn:hover {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+    box-shadow: 0 0 15px var(--accent-glow);
+    transform: translateY(-3px);
+}
+
 /* Games Section */
 .games-section {
     width: 100%;
