@@ -9,7 +9,7 @@ Unless otherwise specified by a component of the applicable Service, the Service
 
 ## 1. About
 
-By downloading one of our Games, you accept this Agreement and our Privacy Policy. Your relationship with G4 Games will be subject to these and only this Agreement and Privacy Policy. This Agreement and Privacy Policy are available for download on the G4 Games website - [Privacy Policy](/privacy-policy.html).
+By downloading one of our Games, you accept this Agreement and our Privacy Policy. Your relationship with G4 Games will be subject to these and only this Agreement and Privacy Policy. This Agreement and Privacy Policy are available for download on the G4 Games website - [Privacy Policy](https://gr4ndsmurf.github.io/g4games/privacy-policy.html).
 
 Each time you download one of our Games to your device a new Agreement is concluded and its terms apply to your use of this Game. By using or otherwise accessing the Services, you agree to the Agreement. If you do not agree to this Agreement and our Privacy Policy, you may not use or otherwise access the Services.
 
