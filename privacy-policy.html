@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Privacy Policy - G4 Games</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- Include marked.js for Markdown parsing -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <style type="text/css">
+        body {
+            font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+    </style>
+  </head>
+  <body>
+
+    <div class="container text-center pb-3 pt-5">
+      <h2 class="d-inline-block align-top pr-2" style="font-weight: bold; margin: 0;">G4 Games</h2>
+    </div>
+  
+    <div class="container">
+      <div class="row mt-4 mb-4">
+          <div class="col-12" id="content">
+            <!-- Content will be loaded here -->
+            <p>Loading Privacy Policy...</p>
+          </div>
+      </div>
+    </div>
+
+    <script>
+      // Fetch the markdown file and render it
+      fetch('privacy-policy.md')
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.text();
+        })
+        .then(text => {
+          document.getElementById('content').innerHTML = marked.parse(text);
+        })
+        .catch(error => {
+          console.error('Error loading markdown:', error);
+          document.getElementById('content').innerHTML = '<p>Error loading content. If you are viewing this locally, please use a local server (like Live Server) to bypass CORS restrictions.</p>';
+        });
+    </script>
+  </body>
+</html>
